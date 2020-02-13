@@ -13,7 +13,7 @@ import Login from "./pages/login";
 
 const cache = new InMemoryCache();
 const link = new HttpLink({
-  uri: "http://localhost:4000",
+  uri:"https://space-explorer-server.herokuapp.com/",
   headers: {
     authorization: localStorage.getItem("token")
   }
