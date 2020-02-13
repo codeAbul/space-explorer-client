@@ -1,0 +1,13 @@
+schema:
+  - http://localhost:4000
+  - schema.graphql
+documents: ./src/**/**/*.tsx
+generates:
+  ./src/types.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+  ./src/resolver-types.ts:
+    plugins:
+      - typescript
+      - typescript-resolvers
